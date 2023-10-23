@@ -20,8 +20,8 @@
             <use xlink:href="/assets/img/sprite.svg#logo-orange"></use>
           </svg>
         </a>
-        <a href="/favorite.html" class="header__link header__link_favorite"
-          ><span>Избранное</span>
+        <a href="/favorite.html" class="header__link header__link_favorite">
+          <span class="header__link-text">Избранное</span>
           <svg class="header__icon">
             <use xlink:href="/assets/img/sprite.svg#star-ob"></use>
           </svg>
@@ -32,7 +32,11 @@
       <section class="search">
         <div class="container">
           <form class="search__form">
-            <input class="search__input" type="search" />
+            <input
+              class="search__input"
+              type="search"
+              placeholder="Найти видео..."
+            />
             <button class="search__btn" type="submit">
               <span>Поиск</span>
               <svg class="search__icon">
@@ -97,23 +101,23 @@
                   <h3 class="video-card__title">Философия идущего к реке</h3>
                   <p class="video-card__channel">Правое полушарие интроверта</p>
                   <p class="video-card__duration">31 мин 25 сек</p>
-                  <button
-                    class="video-card__favorite"
-                    type="button"
-                    aria-label="Добавить в Избранное"
-                  >
-                    <svg class="search__icon">
-                      <use
-                        class="star-o"
-                        xlink:href="/assets/img/sprite.svg#star-ob"
-                      ></use>
-                      <use
-                        class="star"
-                        xlink:href="/assets/img/sprite.svg#star"
-                      ></use>
-                    </svg>
-                  </button>
                 </a>
+                <button
+                  class="video-card__favorite"
+                  type="button"
+                  aria-label="Добавить в Избранное"
+                >
+                  <svg class="search__icon">
+                    <use
+                      class="star-o"
+                      xlink:href="/assets/img/sprite.svg#star-ob"
+                    ></use>
+                    <use
+                      class="star"
+                      xlink:href="/assets/img/sprite.svg#star"
+                    ></use>
+                  </svg>
+                </button>
               </article>
             </li>
 
@@ -128,23 +132,23 @@
                   <h3 class="video-card__title">Как выжить в Средние века?</h3>
                   <p class="video-card__channel">Правое полушарие интроверта</p>
                   <p class="video-card__duration">31 мин 25 сек</p>
-                  <button
-                    class="video-card__favorite"
-                    type="button"
-                    aria-label="Добавить в Избранное"
-                  >
-                    <svg class="search__icon">
-                      <use
-                        class="star-o"
-                        xlink:href="/assets/img/sprite.svg#star-ob"
-                      ></use>
-                      <use
-                        class="star"
-                        xlink:href="/assets/img/sprite.svg#star"
-                      ></use>
-                    </svg>
-                  </button>
                 </a>
+                <button
+                  class="video-card__favorite"
+                  type="button"
+                  aria-label="Добавить в Избранное"
+                >
+                  <svg class="search__icon">
+                    <use
+                      class="star-o"
+                      xlink:href="/assets/img/sprite.svg#star-ob"
+                    ></use>
+                    <use
+                      class="star"
+                      xlink:href="/assets/img/sprite.svg#star"
+                    ></use>
+                  </svg>
+                </button>
               </article>
             </li>
 
@@ -159,23 +163,23 @@
                   <h3 class="video-card__title">История Кока Колы</h3>
                   <p class="video-card__channel">Правое полушарие интроверта</p>
                   <p class="video-card__duration">31 мин 25 сек</p>
-                  <button
-                    class="video-card__favorite"
-                    type="button"
-                    aria-label="Добавить в Избранное"
-                  >
-                    <svg class="search__icon">
-                      <use
-                        class="star-o"
-                        xlink:href="/assets/img/sprite.svg#star-ob"
-                      ></use>
-                      <use
-                        class="star"
-                        xlink:href="/assets/img/sprite.svg#star"
-                      ></use>
-                    </svg>
-                  </button>
                 </a>
+                <button
+                  class="video-card__favorite"
+                  type="button"
+                  aria-label="Добавить в Избранное"
+                >
+                  <svg class="search__icon">
+                    <use
+                      class="star-o"
+                      xlink:href="/assets/img/sprite.svg#star-ob"
+                    ></use>
+                    <use
+                      class="star"
+                      xlink:href="/assets/img/sprite.svg#star"
+                    ></use>
+                  </svg>
+                </button>
               </article>
             </li>
           </ul>
@@ -185,9 +189,9 @@
 
     <footer class="footer">
       <div class="container footer__container">
-        <a href="/" class="footer__link">
+        <a href="/" class="footer__link footer__link_logo">
           <svg
-            class="header__logo"
+            class="footer__logo"
             viewBox="0 0 360 48"
             role="img"
             aria-label="Логотип сервиса You-Tvideo"
@@ -201,7 +205,7 @@
             Designer:
 
             <a
-              class="footer__developers-link"
+              class="footer__link footer__link_developers"
               href="https://t.me/Mrshmallowww"
               target="_blank"
               rel="noopener"
@@ -212,7 +216,7 @@
             Developer:
 
             <a
-              class="footer__developers-link"
+              class="footer__link footer__link_developers"
               href="https://t.me/quper24"
               target="_blank"
               rel="noopener"
