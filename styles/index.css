@@ -313,6 +313,8 @@ iframe {
 }
 .video__content {
   max-width: 1048px;
+  hyphens: auto;
+  overflow-wrap: anywhere;
 }
 .video__title {
   font-size: 40px;
@@ -405,7 +407,17 @@ iframe {
   grid-column: 2/3;
 }
 
-@media (width <= 1024px) {
+.preload {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  margin: auto;
+}
+.preload__text {
+  color: #ff6a00;
+}
+
+@media (max-width: 1024px) {
   .container {
     --container-width: 942px;
   }
@@ -476,7 +488,7 @@ iframe {
   }
 }
 
-@media (width <= 768px) {
+@media (max-width: 768px) {
   .container {
     --container-width: 624px;
   }
@@ -508,7 +520,7 @@ iframe {
   }
 }
 
-@media (width <= 540px) {
+@media (max-width: 540px) {
   .container {
     --container-offset: 11px;
   }
